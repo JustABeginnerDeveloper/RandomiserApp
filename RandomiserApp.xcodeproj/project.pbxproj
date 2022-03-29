@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		448DC25C27F2521F009418A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DC25B27F2521F009418A0 /* AppDelegate.swift */; };
 		448DC25E27F2521F009418A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DC25D27F2521F009418A0 /* SceneDelegate.swift */; };
-		448DC26027F2521F009418A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DC25F27F2521F009418A0 /* ViewController.swift */; };
+		448DC26027F2521F009418A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DC25F27F2521F009418A0 /* MainViewController.swift */; };
 		448DC26327F2521F009418A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448DC26127F2521F009418A0 /* Main.storyboard */; };
 		448DC26527F25221009418A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448DC26427F25221009418A0 /* Assets.xcassets */; };
 		448DC26827F25221009418A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448DC26627F25221009418A0 /* LaunchScreen.storyboard */; };
+		448DC27527F31190009418A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DC27427F31190009418A0 /* SettingsViewController.swift */; };
+		448DC27727F3119C009418A0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DC27627F3119C009418A0 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		448DC25827F2521F009418A0 /* RandomiserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomiserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448DC25B27F2521F009418A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448DC25D27F2521F009418A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		448DC25F27F2521F009418A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		448DC25F27F2521F009418A0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		448DC26227F2521F009418A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		448DC26427F25221009418A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448DC26727F25221009418A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448DC26927F25221009418A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448DC27427F31190009418A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		448DC27627F3119C009418A0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		448DC25A27F2521F009418A0 /* RandomiserApp */ = {
 			isa = PBXGroup;
 			children = (
-				448DC25B27F2521F009418A0 /* AppDelegate.swift */,
-				448DC25D27F2521F009418A0 /* SceneDelegate.swift */,
-				448DC25F27F2521F009418A0 /* ViewController.swift */,
-				448DC26127F2521F009418A0 /* Main.storyboard */,
-				448DC26427F25221009418A0 /* Assets.xcassets */,
-				448DC26627F25221009418A0 /* LaunchScreen.storyboard */,
-				448DC26927F25221009418A0 /* Info.plist */,
+				448DC27327F252BD009418A0 /* Models */,
+				448DC27027F2526B009418A0 /* ViewControllers */,
+				448DC26F27F2523F009418A0 /* Storyboards */,
+				448DC27227F252B3009418A0 /* Resourses */,
+				448DC27127F252A3009418A0 /* Supporting */,
 			);
 			path = RandomiserApp;
+			sourceTree = "<group>";
+		};
+		448DC26F27F2523F009418A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				448DC26127F2521F009418A0 /* Main.storyboard */,
+				448DC26627F25221009418A0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		448DC27027F2526B009418A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				448DC25F27F2521F009418A0 /* MainViewController.swift */,
+				448DC27427F31190009418A0 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		448DC27127F252A3009418A0 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				448DC25D27F2521F009418A0 /* SceneDelegate.swift */,
+				448DC25B27F2521F009418A0 /* AppDelegate.swift */,
+				448DC26927F25221009418A0 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		448DC27227F252B3009418A0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				448DC26427F25221009418A0 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		448DC27327F252BD009418A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				448DC27627F3119C009418A0 /* File.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448DC26027F2521F009418A0 /* ViewController.swift in Sources */,
+				448DC27727F3119C009418A0 /* File.swift in Sources */,
+				448DC26027F2521F009418A0 /* MainViewController.swift in Sources */,
 				448DC25C27F2521F009418A0 /* AppDelegate.swift in Sources */,
 				448DC25E27F2521F009418A0 /* SceneDelegate.swift in Sources */,
+				448DC27527F31190009418A0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FK38VJ3T7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomiserApp/Info.plist;
+				INFOPLIST_FILE = RandomiserApp/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FK38VJ3T7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomiserApp/Info.plist;
+				INFOPLIST_FILE = RandomiserApp/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
